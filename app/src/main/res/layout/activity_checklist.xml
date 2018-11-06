@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comp5216.myrecovery.ChecklistActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bot_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector"
+        app:itemTextColor="@color/bottom_nav_icon_color_selector"
+        app:menu="@menu/navigation" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/checklist"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

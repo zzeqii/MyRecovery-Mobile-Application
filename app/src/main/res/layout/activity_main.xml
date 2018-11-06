@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MyRecovery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/fbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:src="@drawable/stepstaken"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/stats"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:src="@drawable/reportsdone"
+        android:layout_marginEnd="25dp"
+        android:layout_alignTop="@+id/fbb"
+        android:layout_alignEnd="@+id/bot_nav" />
+
+    <ImageView
+        android:id="@+id/mbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/medication"
+        android:layout_below="@+id/fbb"
+        android:layout_marginTop="16dp"
+        android:layout_alignEnd="@+id/fbb" />
+
+    <ImageView
+        android:id="@+id/dbb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:src="@drawable/ready"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/call"
+        android:layout_alignStart="@+id/call" />
+
+    <ImageView
+        android:id="@+id/gb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="250dp"
+        android:maxHeight="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gb"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Hey!"
+        android:layout_alignTop="@+id/gb"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_greeting"
+        android:textSize="20sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/gb"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_stats"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/Gray"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/gb"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bot_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector"
+        app:itemTextColor="@color/bottom_nav_icon_color_selector"
+        app:menu="@menu/navigation" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="80dp"
+        android:layout_above="@+id/mbb"
+        android:layout_alignEnd="@+id/greeting" />
+
+</RelativeLayout>

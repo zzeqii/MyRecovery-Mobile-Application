@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layout"
+    android:background="@color/black">
+
+
+    <LinearLayout android:id="@+id/top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:weightSum="1">
+        <TextView android:id="@+id/text"
+            android:text="   "
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="227dp"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.65">
+            <comp5216.myrecovery.HeartbeatView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+            </comp5216.myrecovery.HeartbeatView >
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="450dp">
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageView"
+            android:layout_width="231dp"
+            android:layout_height="275dp"
+            android:src="@drawable/fp2" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/textView"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cover the camera with one finger tip" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/sub"
+            android:onClick="onSubmit"/>
+
+    </RelativeLayout>
+</LinearLayout>

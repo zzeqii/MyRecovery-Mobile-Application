@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app= "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:text="Your Stats Up Till Now"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="999" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="999" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bot_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector"
+        app:itemTextColor="@color/bottom_nav_icon_color_selector"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

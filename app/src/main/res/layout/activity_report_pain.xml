@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bot_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector"
+        app:itemTextColor="@color/bottom_nav_icon_color_selector"
+        app:menu="@menu/navigation" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/textViewb"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/bod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/body"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="350dp"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/faces"
+        android:layout_below="@+id/textViewb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/seekbarvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/painSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sub"
+        android:layout_below="@id/seekBar"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onSubmit"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where do you feel pain?"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/Gray"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How bad is it?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/Gray"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/bod"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

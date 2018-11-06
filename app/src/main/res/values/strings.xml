@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MyRecovery</string>
+    <string name="title_home">Hi Saad!</string>
+    <string name="title_greeting">How is your day going?</string>
+    <string name="title_Hp">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_report">Report</string>
+    <string name="title_checklist">Checklist</string>
+    <string name="title_more">More</string>
+    <string name="title_headerRP">Report</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_stats">Your Stats For Today</string>
+
+    <string name="medicineA">Medicine A</string>
+    <string name="medicineB">Medicine B</string>
+    <string name="medicineC">Medicine C</string>
+    <string name="medicineD">Medicine D</string>
+</resources>

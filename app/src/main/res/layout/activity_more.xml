@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comp5216.myrecovery.MoreActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bot_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/bottom_nav_icon_color_selector"
+        app:itemTextColor="@color/bottom_nav_icon_color_selector"
+        app:menu="@menu/navigation" />
+
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+
+        android:layout_below="@+id/editText6"
+        android:layout_alignStart="@+id/editText6"
+        />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Surgery"
+
+        android:layout_alignStart="@+id/editText7"
+        android:layout_below="@+id/editText7"
+        />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Sex"
+
+        android:layout_alignStart="@+id/editText8"
+        android:layout_below="@+id/editText8"
+        />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+
+        android:layout_alignStart="@+id/editText9"
+        android:layout_below="@+id/editText9"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:text="User Details"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:onClick="onSubmit"
+        android:layout_below="@+id/textView4"
+        app:srcCompat="@drawable/sub" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="You can make changes!" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/editText6"
+        android:layout_alignBottom="@+id/editText6"
+        android:layout_toStartOf="@+id/editText6" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/editText7"
+        android:layout_alignBottom="@+id/editText7"
+        android:layout_toStartOf="@+id/editText7" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surgery:"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/editText8"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_toStartOf="@+id/editText8" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex:"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/editText9"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_toStartOf="@+id/editText9" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/editText10"
+        android:layout_alignBottom="@+id/editText10"
+        android:layout_toStartOf="@+id/editText10" />
+
+</RelativeLayout>
